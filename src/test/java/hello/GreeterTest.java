@@ -10,6 +10,11 @@ public class GreeterTest {
 
     @Test
     public void greeterSaysHello() {
-	assertThat(greeter.SayHello(), containsString("Hello"));
+	    assertThat(greeter.SayHello(), containsString("Hello"));
+    }
+
+    @Test
+    public void greeterSaysHello2() {
+        assertThat(greeter.SayHello(), containsString("Worlds"));
     }
 }
