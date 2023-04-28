@@ -7,7 +7,8 @@ public class HelloWorld {
 	LocalTime currentTime = new LocalTime();
 	System.out.println("The current local time is: " + currentTime);
 	Greeter greeter = new Greeter();
-	System.out.println(greeter.SayHello());
+	FromUser user = new FromUser();
+	System.out.println(greeter.SayHello() + " from " + user.UserName());
     }
 }
 
