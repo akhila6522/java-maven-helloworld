@@ -5,7 +5,7 @@ pipeline {
         stage('Initialize') {
             steps {
                 // Get code from GitHub repository with given credentials
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], gitTool: 'jgit', userRemoteConfigs: [[credentialsId: 'a39c0acd-46bf-4298-ad5a-f17e4f86f198', url: 'git@github.com:alivetest/java-maven-helloworld.git/']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], gitTool: 'jgit', userRemoteConfigs: [url: 'git@github.com:alivetest/java-maven-helloworld.git/'])
             }
         }
         stage('Build') {
